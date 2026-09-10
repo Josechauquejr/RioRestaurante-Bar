@@ -43,14 +43,15 @@
     clip:rect(0,0,0,0); white-space:nowrap;
   }
   .banner{
-    position:relative; max-width:520px; margin:0 auto; overflow:hidden; background:var(--ink-900);
+    position:relative; max-width:720px; margin:0 auto; overflow:hidden; background:var(--ink-900);
   }
   .banner-photo{
-    display:block; width:100%; height:auto;
+    display:block; width:100%; aspect-ratio:4/3;
+    object-fit:cover; object-position:center 48%;
   }
   .banner::after{
     content:""; position:absolute; inset:0; pointer-events:none;
-    background:linear-gradient(180deg, rgba(22,15,13,0) 90%, var(--ink-900) 100%);
+    background:linear-gradient(180deg, rgba(22,15,13,0) 82%, var(--ink-900) 100%);
   }
 
   /* ============ INSTAGRAM CTA ============ */
